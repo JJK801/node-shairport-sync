@@ -1,0 +1,43 @@
+{
+  "name": "shairport-sync",
+  "version": "1.0.0",
+  "description": "Node.js wrapper for shairport-sync, create airplay/airtune receivers using node.",
+  "main": "./build/",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir build",
+    "dev": "./node_modules/.bin/babel src --out-dir build --watch",
+    "test": "./node_modules/.bin/_mocha test --recursive --compilers js:babel-register",
+    "test-driven": "./node_modules/.bin/_mocha test --recursive --compilers js:babel-register --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJK801/node-shairport-sync.git"
+  },
+  "keywords": [
+    "airplay",
+    "airtune",
+    "shairport-sync",
+    "audio",
+    "streaming"
+  ],
+  "author": "Jérémy Jourdin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJK801/node-shairport-sync/issues"
+  },
+  "homepage": "https://github.com/JJK801/node-shairport-sync#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3",
+    "mock-spawn": "^0.2.6",
+    "sinon": "^1.17.4"
+  },
+  "dependencies": {
+    "babel-cli": "^6.9.0",
+    "lodash": "^4.13.1"
+  }
+}
